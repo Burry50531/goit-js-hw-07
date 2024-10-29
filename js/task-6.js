@@ -20,9 +20,12 @@ function getInputValue() {
 }
 
 function createBoxes(amount) {
-    if (amount > 100) {
+    if (amount < 1 || amount > 100) {
+        alert('Please enter a number between 1 and 100');
         return;
     }
+
+
     const docFragment = document.createDocumentFragment();
     for (let i = 0; i < amount; i++) {
         const createBox = document.createElement('div');
@@ -39,3 +42,4 @@ function createBoxes(amount) {
 function destroyBoxes() {
     listBoxesEl.innerHTML = '';
 }
+

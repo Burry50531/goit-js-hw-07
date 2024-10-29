@@ -28,3 +28,19 @@ img {
     gap: 10px;
     margin: 0;
 }
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.gallery li {
+    flex: 1;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
